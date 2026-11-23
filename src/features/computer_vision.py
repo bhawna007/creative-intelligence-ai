@@ -117,3 +117,54 @@ def analyze_advertisement(image):
     results.update(calculate_saliency(image))
 
     return results
+
+def analyze_multiple_ads(images):
+    """
+    Performs batch analysis of multiple advertisement images.
+
+    Args:
+        images (dict): Dictionary containing category names
+                       and corresponding OpenCV images.
+
+    Returns:
+        pd.DataFrame: Structured analysis report containing
+                      design scores, colour diversity,
+                      and saliency metrics for each image.
+
+    Raises:
+        ValueError: If no images are provided or an image is invalid.
+    """
+
+    # Step 1: Validate input
+    if not isinstance(images, dict):
+        raise TypeError("Input must be a dictionary of advertisement images.")
+
+    if not images:
+        raise ValueError("No advertisement images provided.")
+
+    # Step 2: Initialize results list
+    results = []
+
+    # Step 3: Analyze each advertisement
+    for category, image in images.items():
+
+        # Validate individual image
+        if image is None:
+            raise ValueError(
+                f"Invalid image in category: {category}"
+            )
+
+        # Perform computer vision analysis
+        analysis = analyze_advertisement(image)
+
+        # Add advertisement category
+        analysis["Category"] = category
+
+        # Store analysis results
+        results.append(analysis)
+
+    # Step 4: Convert results into DataFrame
+    report = pd.DataFrame(results)
+
+    # Step 5: Return final report
+    return report

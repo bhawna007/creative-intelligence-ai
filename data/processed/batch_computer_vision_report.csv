@@ -1,0 +1,4 @@
+Brightness Score,Contrast Score,Resolution Score,Design Score,Colour Diversity Score,Updated Design Score,Average Saliency Score,Maximum Saliency,Minimum Saliency,Category
+47.26,91.49,14.85,53.02,85.75,59.84,10.45,0.9887,0.001,Product
+71.1,100.0,34.43,70.22,88.52,73.51,17.03,0.9917,0.0092,Fashion
+80.41,97.81,46.39,76.29,85.63,77.56,12.9,0.9998,0.0071,Food
