@@ -1,6 +1,5 @@
-
-Creative Intelligence AI
-AI-Powered Advertisement Performance & Design Intelligence Platform
+## Creative Intelligence AI
+## AI-Powered Advertisement Performance & Design Intelligence Platform
 
 Creative Intelligence AI is an AI-powered platform that analyzes advertisement creatives using Computer Vision, Machine Learning, and Explainable AI techniques.
 
