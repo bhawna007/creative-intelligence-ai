@@ -1,4 +1,4 @@
-
+import os
 import streamlit as st
 import requests
 import pandas as pd
@@ -23,7 +23,12 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "http://127.0.0.1:8000/upload-image"
+BACKEND_URL = os.getenv(
+    "BACKEND_URL",
+    "http://127.0.0.1:8000"
+).rstrip("/")
+
+API_URL = f"{BACKEND_URL}/upload-image"
 
 st.title("🎨 Creative Intelligence AI")
 st.subheader("AI-Powered Advertisement Analysis Platform")
