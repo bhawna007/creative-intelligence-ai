@@ -1,9 +1,25 @@
-## Creative Intelligence AI
+
+# Creative Intelligence AI
+
 ## AI-Powered Advertisement Performance & Design Intelligence Platform
 
 Creative Intelligence AI is an AI-powered platform that analyzes advertisement creatives using Computer Vision, Machine Learning, and Explainable AI techniques.
 
 It combines visual design analysis with campaign conversion estimation through an interactive Streamlit dashboard and FastAPI backend.
+
+## 🚀 Live Demo
+
+**Try the Live Application:**
+
+https://creative-intelligence-ai-dsbpqz2wa954fncxdibq7d.streamlit.app/
+
+**Backend API:**
+
+https://creative-intelligence-ai-api.onrender.com
+
+**API Health Check:**
+
+https://creative-intelligence-ai-api.onrender.com/health
 
 ## Key Features
 
@@ -98,7 +114,7 @@ Activate it on Windows:
 python -m pip install -r requirements.txt
 ```
 
-## Run the Application
+## Run the Application Locally
 
 The project uses a FastAPI backend and Streamlit frontend. Run them in separate terminals.
 
@@ -194,7 +210,7 @@ The current backend test suite contains 8 automated tests covering:
 - Stronger model validation and cross-validation.
 - Advanced visual feature extraction.
 - Improved explainability and model monitoring.
-- Deployment with production-grade configuration.
+- Production-grade monitoring and performance optimization.
 - User authentication and persistent analysis history.
 
 ## Author
